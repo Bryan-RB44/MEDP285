@@ -1,0 +1,152 @@
+/* div.(insert letter here) will be creating dividers. Auto is here so the text
+can fit inside the box neatly. */
+div.a {
+    width: auto;
+    /*border: 2px solid black;*/
+    border: 12px double #5a400e;
+    background-color: #6a915e;
+}
+div.ab {
+    width: auto;
+    /*border: 2px solid black;*/
+    border: 12px double #5a400e;
+    background-color: #6a915e;
+    padding: 6px;
+}
+
+/* Nav */
+nav {
+    text-align: center;
+    background-color: #b89452;
+    border: 12px double #381f03;
+    font-weight: bold;
+}
+nav p {
+    color: #000000;
+}
+
+/* These classes are for headings in boxes */
+div.hUno {
+    width: 50%;
+    border: 8px solid #4b2800;
+    background-color: #5f9281;
+    margin: auto;
+}
+/* Aligning to the right is unreasonably tedious but I found some help online so
+here's a link to the Stack Overflow page I borrowed some of the following code form:
+https://stackoverflow.com/questions/32915429/right-align-an-element-in-css-while-maintaining-document-flow */
+div.rightContain {
+    text-align: right;
+    /* This part basically makes a box in the right and aligns it so */
+}
+div.hDos {
+    width: 50%;
+    border: 8px solid #4b2800;
+    background-color: #5f9281;
+    display: inline-block;
+    /* From what I understand, inline-block makes the surrounding area around the text LOOK like a div? */
+}
+div.hTres{
+    /* No need to make it align to the right as it does so by default */
+    width: 50%;
+    border: 8px solid #4b2800;
+    background-color: #5f9281;
+}
+/* These classes are for plain text in boxes */
+div.hOne {
+    width: 50%;
+    border: 8px solid #4b2800;
+    background-color: #7e978f;
+    margin: auto;
+    text-align: center;
+}
+div.rightContainText {
+    text-align: right;
+}
+div.hTwo {
+    width: 50%;
+    border: 8px solid #4b2800;
+    background-color: #7e978f;
+    display: inline-block;
+}
+div.hThree {
+    /* Same deal as with hTres */
+    width: 50%;
+    border: 8px solid #4b2800;
+    background-color: #7e978f;
+}
+
+header h2 {
+    text-align: center;
+    background-color: #816822;
+    border: 12px double #5a400e;
+}
+
+header footer {
+    text-align: center;
+    font-weight: bolder;
+    background-color: #816822;
+    border: 12px double #5a400e;
+}
+footer.one {
+    text-align: center;
+    font-weight: bolder;
+}
+
+hr {
+    background-color: #6d5220;
+    height: 2px;
+    border: 2px solid #442e06;
+}
+body {
+    background-color: #b67122;
+}
+h1 {
+    background-color: #0e5a1b;
+    text-align: center;
+    font-size: 50px;
+    font-family: Times, Georgia;
+}
+h2 {
+    background-color: #6d5220;
+    text-align: center;
+}
+
+/* Making a classes for different images */
+img.uno {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+img.dos {
+    display: block;
+    margin-left: auto;
+    max-width: 55%;
+    max-height: 55%;
+    border-radius: 50%;
+}
+img.tres {
+    display: block;
+    margin-right: auto;
+    max-width: 55%;
+    max-height: 55%;
+    border-radius: 50%;
+}
+
+p {
+    color: #381f03;
+    font-family: Times, Georgia, serif;
+}
+div p {
+    font-weight: bold;
+    background-color: #b67122;
+}
+
+/* NOTE: For some reason these effects just won't work?? */
+main a {
+    color:#006405;
+}
+main a:hover {
+    color:rgb(133, 224, 194);
+}
