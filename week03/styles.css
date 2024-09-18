@@ -1,0 +1,106 @@
+/* HEADER CONFIGURATION */
+header {
+    letter-spacing: 8px;
+    text-decoration: underline overline;
+    text-align: center;
+    font-size: larger;
+}
+
+/* HR BAR CONFIGURATION */
+article hr {
+    width: 25%;
+    margin-left: 0px;
+    padding-top: 1px;
+}
+
+/* NAGIVATION BAR CONFIGURATION */
+nav {
+    text-align: center;
+    background-color: #9191b3;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+nav a {
+    text-decoration: none;
+    color: #FF61B0;
+    background-color: #70386E;
+    padding: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+nav a:hover {
+    background-color: #f0ff68;
+    color: #000000;
+}
+
+/* WRAPPER ID CONFIGURATION */
+#wrapper {
+    background-color: #55418f;
+    padding: 40px;
+    margin: 100px;
+    border: dotted 10px #e7ff7e;
+}
+#wrapperP {
+    background-color: #3a6c83;
+    padding: 40px;
+    margin: 100px;
+    border: dotted 10px #ffe23d;
+}
+#wrapperO {
+    background-color: #231350;
+    padding: 40px;
+    margin: 100px;
+    border: dotted 10px #bebebe;
+}
+
+
+/* BODDY CONFIGURATION */
+body.INDEX {
+    color: #FFFF;
+    background-image: url("images/seamless.png");
+    background-attachment: fixed;
+}
+body.planet {
+    color: #FFFF;
+    background-image: linear-gradient(25deg, #000000, #010024, #180412);
+    background-attachment: fixed;
+}
+body.others {
+    color: #FFFF;
+    background-image: linear-gradient(50deg, #391c3d, #090836, #2e0321);
+    background-attachment: fixed;
+}
+
+/* HEADING CONFIGS */
+h1 {
+    font-size: 35px;
+}
+
+/* P CONFIGS */
+p {
+    font-size: larger;
+}
+p a {
+    text-decoration: none;
+    color: #ff89c4;
+    background-color: #532352;
+}
+p a:hover {
+    background-color: #f0ff68;
+    color: #000000;
+}
+
+/* IMAGE CONFIGURATION */
+img.small {
+    height: 350px;
+    width: auto;
+}
+img.mid {
+    height: 545px;
+    width: auto;
+}
+img.midish {
+    height: 495px;
+    width: auto;
+}
+
