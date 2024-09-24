@@ -1,0 +1,183 @@
+/* font stuff */
+article h1 {
+    font-family: 'Josefin Sans', Georgia, Verdana;
+    font-size: 26px;
+}
+/* header configs */
+header {
+    text-align: center;
+    font-family: Helvetica, Georgia;
+    color:#f4f760;
+    background-image: url("images/seamlessHEADER.jpg");
+}
+header.gal {
+    text-align: center;
+    font-family: Helvetica, Georgia;
+    color:#f4f760;
+    background-image: url("images/headerBACK.jpg");
+}
+header.hist {
+    text-align: center;
+    font-family: Helvetica, Georgia;
+    color:#f4f760;
+    background-image: url("images/headerBACK2.jpeg");
+}
+
+/* h configs */
+header h1 {
+    letter-spacing: 10px;
+    text-decoration: underline overline;
+    padding-top: 6px;
+}
+
+
+/* nav configs */
+nav {
+    text-align: center;
+    background-image: url("images/seamlessNAV.jpg");
+}
+nav a {
+    text-decoration: none;
+    padding-right: 1px;
+    padding-left: 2px;
+    background-image: url("images/seamlessNAV2.jpg");
+    color: #000000;
+}
+nav a:hover {
+    background-color: #CCC;
+    color: #FFF;
+    padding-right: 1px;
+    padding-left: 2px;
+}
+article a {
+    text-decoration: none;
+    background-color: #fbfd8c;
+    color: #000000;
+}
+article a:hover {
+    background-color: #7e7d7d;
+    color: #FFF;
+}
+
+/* id configs */
+#wrapper {
+    background-color: #525252;
+    width: 80%;
+    /* Below is top, right, bottom, left. Clockwise! */
+    margin: 0px auto 0px auto; 
+    padding: 40px;
+    border: dashed 4px #000;
+    outline: dashed #CCC;
+}
+#wrapperHist {
+    background-color: #4f4c80;
+    width: 80%;
+    margin: 0px auto 0px auto; 
+    padding: 40px;
+    border: dotted 4px #000;
+    outline: dashed #CCC;
+}
+#wrapperGal {
+    background-color: #363636;
+    width: 80%;
+    margin: 0px auto 0px auto; 
+    padding: 40px;
+    border: dotted 4px #000;
+    outline: dashed #CCC;
+}
+
+/* body configs */
+body.INDEX {
+    background-image: url("images/seamless1.jpg");
+    background-attachment: fixed;
+    color: #FFFF;
+}
+body.hist {
+    background-image: url("images/seamless2.jpg");
+    background-attachment: fixed;
+    color: #FFF;
+}
+body.gal {
+    background-image: url("images/seamless3.jpg");
+    background-attachment: fixed;
+    color: #FFF;
+}
+
+/* mini wrapper configs */
+div.wraplet {
+    background-color: #363636;
+    width: 80%;
+    margin: 0px auto 0px auto; 
+    padding: 40px;
+    border: double 4px #000;
+    outline: inset #CCC;
+    border-radius: 1em;
+}
+div.wrapletDOS {
+    background-color: #756e4f;
+    width: 80%;
+    margin: 0px auto 0px auto; 
+    padding: 40px;
+    border: inset 4px #000;
+    outline: double #CCC;
+    border-radius: 1em;
+}
+div.wrapletDOSONE {
+    background-color: #493f13;
+    width: 80%;
+    margin: 0px auto 0px auto; 
+    padding: 40px;
+    border: inset 4px #000;
+    outline: double #CCC;
+    border-radius: 1em;
+}
+div.wrapletDOSTWO {
+    background-color: #757575;
+    width: 80%;
+    margin: 0px auto 0px auto; 
+    padding: 40px;
+    border: inset 4px #000;
+    outline: double #CCC;
+    border-radius: 1em;
+}
+div.wrapletTRES {
+    background-color: #070027;
+    width: 80%;
+    margin: 0px auto 0px auto; 
+    padding: 40px;
+    border: inset 4px #000;
+    outline: double #CCC;
+    border-radius: 1em;
+}
+
+/* hr configs */
+article hr {
+    width: 25%;
+    margin-left: 0px;
+    padding-top: 1px;
+}
+
+
+/* image configs */
+img.small {
+    height: 350px;
+    width: auto;
+}
+img.smallcenter {
+    height: 350px;
+    width: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* p configs */
+article p {
+    font-family: 'Merriweather', Georgia, Verdana;
+}
+
+/* button configs */
+button {
+    text-align: center;
+}
