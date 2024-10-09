@@ -1,0 +1,117 @@
+/* body configs */
+body {
+    background-image: url(images/backLav.avif);
+    background-attachment: fixed;
+}
+
+
+/* links/a configs */
+button a {
+    text-decoration: none;
+    color:#644881;
+}
+
+/* button configs */
+button {
+    background-color: #edc5ff;
+}
+
+/* nav configs */
+nav {
+    text-align: center;
+    background-color: #ba9bda;
+    padding: 6px;
+}
+nav a {
+    text-decoration: none;
+    padding-right: 1px;
+    padding-left: 2px;
+    color: #000000;
+    background-color: #FFF0F5;
+}
+nav a:hover {
+    background-color: #9678B6;
+    color: #FFF;
+    padding-right: 1px;
+    padding-left: 2px;
+}
+
+/* id configs */
+#wrapper {
+    background-color: #CCC;
+    width: 80%;
+    /* Below is top, right, bottom, left. Clockwise! */
+    margin: 0px auto 0px auto; 
+    padding: 40px;
+    border: dotted 4px #000;
+}
+
+/* div configs */
+div.wraplet {
+    background-color: #DCD0FF;
+    width: 80%;
+    margin: 0px auto 0px auto; 
+    padding: 40px;
+    border: double 4px #796878;
+    outline: inset 	#C9A0DC;
+    border-radius: 1em;
+}
+
+/* header configs */
+header {
+    padding-top: 10px;
+    background-image: url(images/backHead.jpg);
+}
+
+/* h1 related configs */
+header h1 {
+    letter-spacing: 10px;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
+}
+article h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+}
+
+/* h2 related configs */
+header h2 {
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
+}
+
+/* hr configs */
+article hr {
+    width: 25%;
+    margin-left: 0px;
+    padding-top: 1px;
+}
+
+/* p configs */
+article p {
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* img configs */
+article img {
+    width: auto;
+    height: 150px;
+}
+
+/* ol configs */
+ol {
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
