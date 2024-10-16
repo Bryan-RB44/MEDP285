@@ -1,0 +1,770 @@
+/* START border-box fix */
+html {
+    box-sizing: border-box;
+    background-color: #000;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/* END border-box fix */
+
+/* START container class  for everything to be within */
+div.container {
+    width: 80%;
+    margin: 0px auto; /* This is top and the left & right */
+}
+/* START container class  for everything to be within */
+
+/* START setting up various tags for text */
+h1, h2, h3, h4, h5, p, ul {
+    margin: 0px;
+}
+/* END setting up various text tags */
+
+/* START header and main setup */
+header {
+    background-color: #6bbea5;
+    padding: 10px;
+    letter-spacing: 5px;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 10px 10px 0px 0px;
+}
+
+main {
+    background-color: #36212a;
+    color:#c3e0d9;
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+/* END header and main setup */
+
+/* START setting up nav bar */
+nav ul li {
+    display: inline-block;
+    background-color: #c3e0d9;
+    padding: 6px;
+    width: 100px;
+    text-align: center;
+    border: solid 1px black;
+    border-radius: 20%;
+
+}
+
+li.roam {
+    display: inline-block;
+    background-color: #8fe032;
+    padding: 6px;
+    width: 100px;
+    text-align: left;
+    border: solid 1px black;
+    border-radius: 20%;
+}
+
+nav {
+    background-image: url(images/background.png);
+    /* background-color: #3a6b64; */
+    position: sticky;
+    top: 0;
+    /* This makes thhe nav tab on top of EVERYTHING */
+    z-index: 999;
+    padding: 10px;
+}
+/* EMD setting up nav bar */
+
+/* START link settings */
+p a {
+    text-decoration: none;
+    color: #ffffff;
+}
+a.seed {
+    text-decoration: none;
+    color: #72ff79;
+}
+
+a.grow {
+    text-decoration: none;
+    color: #72ff79;
+}
+/* END link settings */
+
+/* START second half of screen (used to be sidebar */
+aside {
+    background-color: #29161c;
+    float: left;
+    width: 50%;
+    color:#c3e0d9;
+    text-align: right;
+    padding: 10px;
+}
+/* END second half */
+
+/* START classes for swapping colors between both sides */
+main.swap {
+    background-color: #29161c;
+}
+aside.switch {
+    background-color: #36212a;
+}
+/* END classes for swapping */
+
+/* START footer settings */
+footer {
+    background-color: #210d2b;
+    color:#c3e0d9;
+    float: none;
+    clear: both;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+}
+/* END footer settings */
+
+/* EVERYTHING BELOW SETS UP THE SQUARES */
+/* BELOW IS FOR index.html */
+/* START light square classes */
+div.buttonLight {
+    background-color: #ff45a2;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px;
+}
+div.buttonLight2 {
+    background-color: #ff45a2;
+    position: absolute;
+    top: 38%;
+    left: 40%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px;
+}
+div.buttonLight3 {
+    background-color: #ff45a2;
+    position: absolute;
+    top: 41%;
+    left: 48%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px;
+}
+div.buttonLight4 {
+    background-color: #ff45a2;
+    position: absolute;
+    top: 45%;
+    left: 38%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px;
+}
+div.buttonLight5 {
+    background-color: #ff45a2;
+    position: absolute;
+    top: 47%;
+    left: 46%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 15px 15px 0px;
+}
+div.buttonLight6 {
+    background-color: #ff45a2;
+    position: absolute;
+    top: 47%;
+    left: 54%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 15px 10px 0px;
+}
+div.buttonLight7 {
+    background-color: #ff45a2;
+    position: absolute;
+    top: 54%;
+    left: 46%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 0px 15px 15px 15px;
+}
+div.buttonLight8 {
+    background-color: #ff45a2;
+    position: absolute;
+    top: 54%;
+    left: 54%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 0px 15px 0px;
+}
+/* END light squares */
+
+/* START dark square classes */
+div.buttonDark {
+    background-color: #5a1048;
+    color: #ffffff;
+    position: absolute;
+    top: 53%;
+    left: 35%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 15px 0px 15px;
+}
+div.buttonDark2 {
+    background-color: #5a1048;
+    color: #ffffff;
+    position: absolute;
+    top: 53%;
+    left: 43%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 15px 15px 0px;
+}
+div.buttonDark3 {
+    background-color: #5a1048;
+    color: #ffffff;
+    position: absolute;
+    top: 60%;
+    left: 31%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 15px 0px 15px;
+}
+div.buttonDark4 {
+    background-color: #5a1048;
+    color: #ffffff;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 15px 0px 0px;
+}
+div.buttonDark5 {
+    background-color: #5a1048;
+    color: #ffffff;
+    position: absolute;
+    top: 60%;
+    left: 49%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 15px 15px 0px;
+}
+div.buttonDark6 {
+    background-color: #5a1048;
+    color: #ffffff;
+    position: absolute;
+    top: 60%;
+    left: 57%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 15px 15px 0px;
+}
+/* END dark squares */
+
+/* START stump squares */
+div.buttonStump {
+    background-color: #2a105a;
+    color: #ffffff;
+    position: absolute;
+    top: 67%;
+    left: 40%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px;
+}
+div.buttonStump2 {
+    background-color: #2a105a;
+    color: #ffffff;
+    position: absolute;
+    top: 73%;
+    left: 40%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 0px 0px 0px 15px;
+}
+div.buttonStump3 {
+    background-color: #2a105a;
+    color: #2a105a;
+    position: absolute;
+    top: 80%;
+    left: 38%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 0px 15px 15px;
+}
+div.buttonStump4 {
+    background-color: #2a105a;
+    color: #ffffff;
+    position: absolute;
+    top: 84.5%;
+    left: 38%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 0px;
+}
+div.buttonStump5 {
+    background-color: #2a105a;
+    color: #ffffff;
+    position: absolute;
+    top: 73%;
+    left: 48%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 0px 0px 15px 15px;
+}
+div.buttonStump6 {
+    background-color: #2a105a;
+    color: #ffffff;
+    position: absolute;
+    top: 67%;
+    left: 53%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px;
+}
+/* END stump squares */
+
+/* BELOW IS FOR new.html */
+/* START light square classes */
+div.buttonLightAzul {
+    background-color: #8645ff;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px;
+}
+div.buttonLightAzul2 {
+    background-color: #8645ff;
+    position: absolute;
+    top: 38%;
+    left: 40%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px;
+}
+div.buttonLightAzul3 {
+    background-color: #8645ff;
+    position: absolute;
+    top: 41%;
+    left: 48%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px;
+}
+div.buttonLightAzul4 {
+    background-color: #8645ff;
+    position: absolute;
+    top: 45%;
+    left: 38%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px;
+}
+div.buttonLightAzul5 {
+    background-color: #8645ff;
+    position: absolute;
+    top: 47%;
+    left: 46%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 15px 15px 0px;
+}
+div.buttonLightAzul6 {
+    background-color: #8645ff;
+    position: absolute;
+    top: 47%;
+    left: 54%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 15px 10px 0px;
+}
+div.buttonLightAzul7 {
+    background-color: #8645ff;
+    position: absolute;
+    top: 54%;
+    left: 46%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 0px 15px 15px 15px;
+}
+div.buttonLightAzul8 {
+    background-color: #8645ff;
+    position: absolute;
+    top: 54%;
+    left: 54%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 0px 15px 0px;
+}
+/* END light squares */
+
+/* START dark square classes */
+div.buttonDarkAzul {
+    background-color: #10115a;
+    color: #ffffff;
+    position: absolute;
+    top: 53%;
+    left: 35%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 15px 0px 15px;
+}
+div.buttonDarkAzul2 {
+    background-color: #10115a;
+    color: #ffffff;
+    position: absolute;
+    top: 53%;
+    left: 43%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 15px 15px 0px;
+}
+div.buttonDarkAzul3 {
+    background-color: #090931;
+    color: #ffffff;
+    position: absolute;
+    top: 63%;
+    left: 29%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 15px 15px 15px;
+}
+div.buttonDarkAzul4 {
+    background-color: #10115a;
+    color: #ffffff;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 15px 0px 0px;
+}
+div.buttonDarkAzul5 {
+    background-color: #10115a;
+    color: #ffffff;
+    position: absolute;
+    top: 60%;
+    left: 49%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 15px 15px 0px;
+}
+div.buttonDarkAzul6 {
+    background-color: #10115a;
+    color: #ffffff;
+    position: absolute;
+    top: 60%;
+    left: 57%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 15px 15px 0px;
+}
+/* END dark squares */
+
+/* START stump squares */
+div.buttonStumpAzul {
+    background-color: #090216;
+    color: #ffffff;
+    position: absolute;
+    top: 67%;
+    left: 40%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px;
+}
+div.buttonStumpAzul2 {
+    background-color: #090216;
+    color: #ffffff;
+    position: absolute;
+    top: 73%;
+    left: 40%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 0px 0px 0px 15px;
+}
+div.buttonStumpAzul3 {
+    background-color: #090216;
+    color: #090216;
+    position: absolute;
+    top: 80%;
+    left: 38%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 0px 15px 15px;
+}
+div.buttonStumpAzul4 {
+    background-color: #090216;
+    color: #ffffff;
+    position: absolute;
+    top: 84.5%;
+    left: 38%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 0px;
+}
+div.buttonStumpAzul5 {
+    background-color: #090216;
+    color: #ffffff;
+    position: absolute;
+    top: 73%;
+    left: 48%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 0px 0px 15px 15px;
+}
+div.buttonStumpAzul6 {
+    background-color: #090216;
+    color: #ffffff;
+    position: absolute;
+    top: 67%;
+    left: 53%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px;
+}
+/* END stump squares */
+
+/* BELOW IS FOR withdrew.html*/
+/* START light square classes */
+div.buttonLightWD {
+    background-color: #29214d;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px;
+}
+div.buttonLightWD2 {
+    background-color: #29214d;
+    position: absolute;
+    top: 38%;
+    left: 40%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 0px 0px 15px;
+}
+div.buttonLightWD3 {
+    background-color: #29214d;
+    position: absolute;
+    top: 45%;
+    left: 38%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px;
+}
+div.buttonLightWD4 {
+    background-color: #29214d;
+    position: absolute;
+    top: 47%;
+    left: 46%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 15px 15px 0px;
+}
+div.buttonLightWD5 {
+    background-color: #29214d;
+    position: absolute;
+    top: 54%;
+    left: 46%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 0px 15px 15px 15px;
+}
+div.buttonLightWD6 {
+    background-color: #29214d;
+    position: absolute;
+    top: 54%;
+    left: 54%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 15px 15px 0px;
+}
+/* END light squares */
+
+/* START dark square classes */
+div.buttonDarkWD {
+    background-color: #010e1d;
+    color: #ffffff;
+    position: absolute;
+    top: 53%;
+    left: 35%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 15px 0px 15px;
+}
+div.buttonDarkWD2 {
+    background-color: #010e1d;
+    color: #ffffff;
+    position: absolute;
+    top: 53%;
+    left: 43%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 15px 15px 0px;
+}
+div.buttonDarkWD3 {
+    background-color: #010e1d;
+    color: #ffffff;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 15px 0px 0px;
+}
+/* END dark squares */
+
+/* START stump squares */
+div.buttonStumpWD {
+    background-color: #000000;
+    color: #ffffff;
+    position: absolute;
+    top: 67%;
+    left: 40%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px;
+}
+div.buttonStumpWD2 {
+    background-color: #000000;
+    color: #ffffff;
+    position: absolute;
+    top: 73%;
+    left: 40%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 0px 0px 0px 15px;
+}
+div.buttonStumpWD3 {
+    background-color: #000000;
+    color: #000000;
+    position: absolute;
+    top: 80%;
+    left: 38%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 0px 15px 15px;
+}
+div.buttonStumpWD4 {
+    background-color: #000000;
+    color: #ffffff;
+    position: absolute;
+    top: 84.5%;
+    left: 38%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 0px;
+}
+div.buttonStumpWD5 {
+    background-color: #000000;
+    color: #ffffff;
+    position: absolute;
+    top: 73%;
+    left: 48%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 0px 0px 15px 15px;
+}
+div.buttonStumpWD6 {
+    background-color: #000000;
+    color: #72ff79;
+    position: absolute;
+    top: 67%;
+    left: 53%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 60px;
+}
+/* END stump squares */
+
+/* BELOW IS FOR anew.html */
+/* START light square classes */
+div.buttonLightAN {
+    background-color: #43328f;
+    position: absolute;
+    top: 62%;
+    left: 52%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 0px 15px 15px 0px;
+}
+div.buttonLightAN2 {
+    background-color: #43328f;
+    position: absolute;
+    top: 62%;
+    left: 47%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 0px 0px 15px;
+}
+div.buttonLightAN3 {
+    background-color: #43328f;
+    position: absolute;
+    top: 55%;
+    left: 49%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px;
+}
+/* END light squares */
+
+/* START dark square classes */
+div.buttonDarkAN {
+    background-color: #310853;
+    color: #ffffff;
+    position: absolute;
+    top: 68%;
+    left: 42%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 15px 15px 15px;
+}
+div.buttonDarkAN2 {
+    background-color: #310853;
+    color: #ffffff;
+    position: absolute;
+    top: 70%;
+    left: 47%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 0px 0px 15px;
+}
+div.buttonDarkAN3 {
+    background-color: #310853;
+    color: #ffffff;
+    position: absolute;
+    top: 70%;
+    left: 52%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 0px 15px 15px 0px;
+}
+/* END dark squares */
+
+/* START stump squares */
+div.buttonStumpAN {
+    background-color: #1a061f;
+    color: #ffffff;
+    position: absolute;
+    top: 78%;
+    left: 48%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px;
+}
+div.buttonStumpAN2 {
+    background-color: #1a061f;
+    color: #ffffff;
+    position: absolute;
+    top: 84.50%;
+    left: 45%;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 15px 15px 0px 0px;
+}
+/* END stump squares */
