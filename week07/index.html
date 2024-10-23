@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <!-- !!!PLEASE READ!!! -->
+    <!-- Got inspiration from the "GARLIC=RICH AIR" website shown off in class, I know this isn't
+     specifically art heavy but I could make the rest of the project lean more into a more
+     black/underground market aesthetic if this doesn't fit the project too well! -->
+
+    
+    <!-- MAIN IDEA FOR SITE: Selling class seats for Hunter class enrollments. -->
+    <!-- WHAT'S THE POINT?: Bringing attention to the chaos of the enrollment system. -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Responsive Flex Box Layout Without Media Queries</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Head Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <!-- Reading Text Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="containLogo">
+                    <img class="logo" src="images/marketLogo.webp">
+                </div>
+                
+                <h1><u>The Hunter College Course Marketplace</u></h1>
+                <h2>Avaritia in temporibus necessitatis</h2>
+
+                <div class="containIMG">
+                    <img src="images/spamdance.gif">
+                    <img src="images/money.gif">
+                    <img src="images/pencil.png">
+                </div>
+                
+                <h3>(Not to be confused with the Course Catalogue)</h3>
+            </header>
+            
+            <main>
+                <h2 class="headFont">The place for your course needs</h2>
+                <h3 class="headFont">Our Mission:</h3>
+                <hr>
+                <p class="textFont">
+                    Are you tired of dealing with classes that you need being
+                    automatically filled up as soon as your enrollment date
+                    comes? Are you also sick of having to bear with courses you'd
+                    never otherwise take? Have you also needed to change a class after that
+                    "Staff" turns into an infamous professor's name in the
+                    course description?
+                </p>
+                <p class="textFont">
+                    Worry no more! This site is dedicated <em>to</em> the students, <em>by</em>
+                    the students! Find listings from people willing to sell their positions
+                    in courses you're in desperate need for at the non-official
+                    Hunter College Course Marketplace!
+                </p>
+                <p class="textFont">
+                    Here at The Hunter College Course Marketplace, we host listings for
+                    anyone's needs, ranging from major-related classes to even listings
+                    which are from other CUNY schools so everyone across CUNY can become
+                    involved! We also offer flat-fee seat services to find courses for you
+                    if no listing matches what you're looking for!
+                </p>
+                <h3>More Info</h3>
+                <hr>
+                <p>
+                    For more info about services like ours, click the button below!
+                </p>
+                <button type="button"><a href="https://en.wikipedia.org/wiki/Black_market#:~:text=A%20black%20market%2C%20underground%20economy,an%20institutional%20set%20of%20rules." target="_blank">More Info</a></button>
+                <h3 class="headFont">Disclaimer</h3>
+                <hr>
+                <p class="textFont">
+                    This site is <strong>NOT</strong> responsible for any violation of
+                    future codes of conduct and/or honor codes. Everything should be
+                    taken as <strong>SATIRE</strong>, nothing more nothing less.
+                </p>
+            </main>
+
+            <nav>
+                <h2 class="headFont">Class Shopping Categories</h2>
+                <hr>
+                <label class="textFont" for="search">Search:</label><br>
+                <input type="text" id="search" name="search"><br>
+                <button type="button">Search</button>
+                <ul class="textFont">
+                    <li><a href="https://hunter-undergraduate.catalog.cuny.edu/courses?sortBy=code" target="_blank">Major Related Courses</a></li>
+                    <li><a href="https://hunter-undergraduate.catalog.cuny.edu/courses?sortBy=code" target="_blank">Minor Related Courses</a></li>
+                    <li><a href="https://hunter-undergraduate.catalog.cuny.edu/courses?sortBy=code" target="_blank">Pre-Requisite Courses</a></li>
+                    <li><a href="https://hunter-undergraduate.catalog.cuny.edu/courses?sortBy=code" target="_blank">Core Requirement Courses</a></li>
+                    <li><a href="https://hunter-undergraduate.catalog.cuny.edu/courses?sortBy=code" target="_blank">Electives</a></li>
+                    <li><a href="https://hunter-undergraduate.catalog.cuny.edu/courses?sortBy=code" target="_blank">Other CUNY Courses (ePermit)</a></li>
+                    <li><a href="https://hunter-undergraduate.catalog.cuny.edu/courses?sortBy=code" target="_blank">Bargain Bin</a></li>
+                    <li><a href="https://hunter-undergraduate.catalog.cuny.edu/courses?sortBy=code" target="_blank">Seat Serving Service</a></li>
+                </ul>
+            </nav>
+
+            <aside>
+                <h2 class="headFont">About</h2>
+                <hr>
+                <p class="textFont">
+                    Satire-aside, this website serves as commentary to the struggle that
+                    students at Hunter College face when it comes to obtaining classes
+                    that they need in their academic careers.
+                </p>
+                <p class="textFont">
+                    Whether it's being beat by
+                    <a href="https://brie.hunter.cuny.edu/hunterathenian/2019/05/the-battle-for-classes-2/" target="_blank">honor students</a>
+                    , landing a bad enrollment
+                    time on enrollment day, and/or there simply being
+                    <a href="https://www.reddit.com/r/HunterCollege/comments/17rqipk/classes_got_filled_so_quickly/" target="_blank">too many students</a>
+                    in the semester, this site is meant to represent that sense
+                    of frustration and desperation in students. While it's intentionally
+                    written less formally, it is meant to show that it's still very well likely
+                    that some might turn to
+                    <a href="https://en.wikipedia.org/wiki/Black_market#:~:text=A%20black%20market%2C%20underground%20economy,an%20institutional%20set%20of%20rules." target="_blank">alternative means</a>
+                    for money and others for courses
+                    if need be. 
+                </p>
+            </aside>
+
+            <footer class="textFont">
+                &copy; 2024 Bryan Briones<br>
+                (This website is in no way affiliated with Hunter College, CUNY, Eric 
+                Adams, any children of notable NYC politicians, Macaulay Honors College, Hunter Board of 
+                Trustees, and/or the Hunter Student Government [both USG and GSA])
+            </footer>
+        </div>
+    </body>
+</html>
