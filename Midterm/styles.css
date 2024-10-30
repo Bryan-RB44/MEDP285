@@ -1,0 +1,242 @@
+/* START border-box fix */
+html {
+    box-sizing: border-box;
+    background-image: url(images/back.gif);
+    background-attachment: fixed;
+
+    /* ANIMATION */
+    animation: moveIt 10s linear infinite;
+    animation-name: moveBack1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+html.market {
+    background-image: url(images/back2.jpg);
+}
+
+html.services {
+    background-image: url(images/back2.jpg);
+}
+/* END border-box fix */
+
+/* START font classes */
+/* Head Fonts Class */
+.headFont {
+    font-family: "Rokkitt", 'Times New Roman', Georgia;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+}
+/* Reading Fonts Class */
+.textFont {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* END font classes */
+
+.container {
+    color: #FFF;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr)); /* Makes 12 columns that are each 1 part of available space.*/
+
+    width: 80%;
+    margin: 0 auto; /*top and bottom are 0, left and right are automatically evenly spaced from the sides. */
+}
+/* all of the children of container will have these traits. */
+/* basically each element inside the container. */
+.container > * {
+    padding: 20px;
+}
+
+/* START heading tags configs */
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+/* END heading tags configs */
+
+/* START header related tags */
+header {
+    background: #8b5399;
+    color: #FFFF;
+    grid-column: 1 / 13; /* the header will be a column that goes from the start to the end of the grid horizontally (here it's the left to right of page). */
+    border-style: double;
+    border-width: 6px;
+    border-color: #d893d5 #2f003d;
+}
+header h1 {
+    letter-spacing: 8px;
+    font-family: Georgia, Arial, sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+header h2 {
+    letter-spacing: 1px;
+    font-family: Georgia, Arial, sans-serif;
+    padding-bottom: 0px;
+    text-align: center;
+    background-color: #3a318b;
+    border-radius: 50px;
+
+    /* ANIMATION */
+    animation-name: goldGradient;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+header h3 {
+    letter-spacing: 1px;
+    font-family: Georgia, Arial, sans-serif;
+    padding-bottom: 0px;
+    text-align: center;
+}
+/* END header related tags */
+
+/* END main related configs */
+main {
+    background: #6d2574;
+    grid-column: 4 / 10; /*Makes the main take up 6 out of 13 spaces and go right after the nav. */
+    border-style: double;
+    border-width: 6px;
+    border-color: #2f003d;
+}
+main button a {
+    text-decoration: none;
+    color: #000;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+main button a:hover {
+    background-color: #000;
+    color: #ffffff;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 10px;
+}
+/* END main related configs */
+
+/* START nav related configs */
+nav {
+    background: #915fa0;
+    grid-column: 1 / 4; /*Makes the nav take up 3 columns of space. */
+    border-style: double;
+    border-width: 6px;
+    border-color: #d893b3 #d893b3 #2f003d #2f003d;
+}
+nav li {
+    padding: 2px;
+}
+nav.topNavi {
+    grid-row: 2 / 3;
+    grid-column: 1 / 13;
+    text-align: center;
+    border-style: double;
+    border-width: 6px;
+    border-color: #ab93d8 #04003d #04003d #04003d;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+/* END nav related configs */
+
+/* START list related configs */
+li a {
+    text-decoration: none;
+    color: #E1FFF7;
+}
+li a:hover {
+    background-color: #f0ff68;
+    color: #520852;
+}
+/* END list related configs */
+
+/* START link related configs */
+a.naviTOP {
+    text-decoration: none;
+    padding: 6px;
+    color: #cbc5ff;
+    background-color: #2f003d;
+    border-radius: 25px;
+}
+a.naviTOP:hover {
+    background-color: #f0ff68;
+    color: #520852;
+    /* ANIMATION */
+    animation-name: shine;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+/* END link related configs */
+
+/* START aside configs */
+aside {
+    background: #915fa0;
+    grid-column: 10 / 13; /*Makes the nav take up the last 3 spaces of the grid. */
+    border-style: double;
+    border-width: 6px;
+    border-color: #d893b3 #2f003d #2f003d #d893b3;
+}
+aside a {
+    text-decoration: none;
+    color: #001c33;
+}
+aside a:hover {
+    background-color: #f0ff68;
+    color: #520852;
+}
+/* END aside configs */
+
+main, nav, aside {
+    grid-row: 3 / 5; /* This makes the 3 elements all go into the 2nd row to be together. This makes them go underneath the header now.*/
+}
+
+/* START footer related configs */
+footer {
+    background: #271c6b;
+    grid-column: 1 / 13; /* the footer will be a column that goes from the start to the end of the grid horizontally (here it's the left to right of page). */
+    border-style: double;
+    border-width: 6px;
+    border-color: #9a93d8 #2f003d #2f003d #2f003d;
+}
+/* END footer related configs */
+
+/* START image related configs */
+img.logo {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.containLogo {
+    background-image: linear-gradient(to bottom right, #d8d800, #833f9e);
+    border-radius: 50px;
+    border-style: groove;
+}
+.containIMG {
+    display: flex;
+    align-items: center; 
+    padding-left: 5px;
+    background-image: linear-gradient(to bottom right, #833f9e, #d8d800);
+    border-radius: 4px;
+    border-style: groove;
+
+    /* ANIMATION */
+    /* FOR ORGANIZATION AND TO PREVENT ERRORS, THIS ANIMATIO WILL BE WITHIN THIS CLASS*/
+    animation-name: movingBar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+img {
+    margin-left: 15% ;
+    margin-right: 10%;
+    width: 10%;
+    height: auto;
+}
+/* END image related configs */

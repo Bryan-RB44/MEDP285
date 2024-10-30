@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>The Market</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Stylesheets used -->
+        <link rel="stylesheet" href="stylesMarket.css">
+        <link rel="stylesheet" href="animations.css">
+
+        <!-- Head Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <!-- Reading Text Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="containLogo">
+                    <img class="logo" src="images/marketLogo.webp">
+                </div>
+
+                <h1><u>The Hunter College Course Marketplace</u></h1>
+                <h2>Avaritia in temporibus necessitatis</h2>
+            </header>
+
+            <nav class="topNavi">
+                <a class="naviTOP" href="index.html">Home Page</a> | 
+                <a class="naviTOP" href="ripCaught.html">News</a>
+                <hr>
+            </nav>
+
+            <main>
+                <h1>newest listings</h1>
+                <hr>
+                <div class="container">
+                    <!-- FIRST ROW -->
+                    <div class="listing1">
+                        <h1>CS 243</h1>
+                        <hr>
+                        <p>Status: <strong class="hidden">OPEN</strong></p>
+                        <p>Professor: Prof. Andrews</p>
+                        <p>Title: Computational Torture</p>
+                        <p>Schedule: Thurs - Fri</p>
+                        <p>Times: 5 PM - 7:50 PM</p>
+                    </div>
+                    <div class="listing2">
+                        <h1>MEDP 134</h1>
+                        <hr>
+                        <p>Status: <strong class="hidden">OPEN</strong></p>
+                        <p>Professor: Prof. Larson</p>
+                        <p>Title: Video Editing</p>
+                        <p>Schedule: Mon - Tues</p>
+                        <p>Times: 9:30 AM - 12 PM</p>
+                    </div>
+                    <div class="listing3">
+                        <h1>SPAN 249</h1>
+                        <hr>
+                        <p>Status: <strong class="hidden">OPEN</strong></p>
+                        <p>Professor: Prof. Romero</p>
+                        <p>Title: Adv. Spanish</p>
+                        <p>Schedule: Sat</p>
+                        <p>Times: 1 PM - 5 PM</p>
+                    </div>
+
+                    <!-- SECOND ROW -->
+                    <div class="listing4">
+                        <h1>WGS 110</h1>
+                        <hr>
+                        <p>Status: <strong class="hidden">OPEN</strong></p>
+                        <p>Professor: Prof. Lopez</p>
+                        <p>Title: Women in Writing</p>
+                        <p>Schedule: Mon</p>
+                        <p>Times: 3 PM - 5 PM</p>
+                    </div>
+                    <div class="listing5">
+                        <h1>CS 302</h1>
+                        <hr>
+                        <p>Status: <strong class="hidden">OPEN</strong></p>
+                        <p>Professor: Prof. Hall</p>
+                        <p>Title: Comp. Architecture</p>
+                        <p>Schedule: Mon - Wed</p>
+                        <p>Times: 8 AM - 9:50 AM</p>
+                    </div>
+                    <div class="listing6">
+                        <h1>FILM 203</h1>
+                        <hr>
+                        <p>Status: <strong class="hidden">OPEN</strong></p>
+                        <p>Professor: Prof. Warner</p>
+                        <p>Title: History of Film</p>
+                        <p>Schedule: Thurs</p>
+                        <p>Times: 1 PM - 2:30 PM</p>
+                        <p><strong>EXTRA</strong>: Does count as a writing intensive course.</p>
+                    </div>
+                    <!-- THIRD ROW -->
+                    <div class="listing7">
+                        <h1>MED 244</h1>
+                        <hr>
+                        <p>Status: <strong class="hidden">OPEN</strong></p>
+                        <p>Professor: Prof. Lin</p>
+                        <p>Title: Video Production</p>
+                        <p>Schedule: Tues - Thurs</p>
+                        <p>Times: 11 AM - 2 PM</p>
+                    </div>
+                    <div class="listing8">
+                        <h1>MATH 111</h1>
+                        <hr>
+                        <p>Status: <strong class="hidden">OPEN</strong></p>
+                        <p>Professor: Prof. Chells</p>
+                        <p>Title: Intro to Math</p>
+                        <p>Schedule: Mon, Wed, & Fri</p>
+                        <p>Times: 10 AM - 12 PM</p>
+                    </div>
+                    <div class="listing9">
+                        <h1>ENGL 230</h1>
+                        <hr>
+                        <p>Status: <strong class="hidden">OPEN</strong></p>
+                        <p>Professor: Prof. Goldsman</p>
+                        <p>Title: Intro to Essays</p>
+                        <p>Schedule: Mon - Thurs</p>
+                        <p>Times: 11 AM - 2 PM</p>
+                        <p><strong>EXTRA</strong>: Does <strong>not</strong> count as a writing intensive course.</p>
+                    </div>
+                </div>
+            </main>
+
+            <nav>
+                <h2 class="headFont">Class Shopping Categories</h2>
+                <hr>
+                <label class="textFont" for="search">Search:</label><br>
+                <input type="text" id="search" name="search"><br>
+                <button type="button">Search</button>
+                <ul class="textFont">
+                    <li><a href="ripCaught.html">Major Related Courses</a></li>
+                    <li><a href="ripCaught.html">Minor Related Courses</a></li>
+                    <li><a href="ripCaught.html">Pre-Requisite Courses</a></li>
+                    <li><a href="ripCaught.html">Core Requirement Courses</a></li>
+                    <li><a href="ripCaught.html">Electives</a></li>
+                    <li><a href="ripCaught.html">Other CUNY Courses (ePermit)</a></li>
+                    <li><a href="ripCaught.html">Bargain Bin</a></li>
+                    <li><a href="ripCaught.html">Seat Serving Service</a></li>
+                </ul>
+            </nav>
+
+            <footer class="textFont">
+                &copy; 2024 Bryan Briones<br>
+                (This website is in no way affiliated with Hunter College, CUNY, Eric 
+                Adams, any children of notable NYC politicians, Macaulay Honors College, Hunter Board of 
+                Trustees, and/or the Hunter Student Government [both USG and GSA])
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+@keyframes moveBack1 {
+    0% {background-position: 1000;}
+    50% {background-position: 0;} 
+    100% {background-position: 1000;}
+}
+
+@keyframes shine {
+    0% {background-color: #f0ff68;}
+
+    25% {background-color: #a584ff;}
+
+    50% {background-color: #fc78c5;}
+
+    75% {background-color: #a584ff;}
+    
+    100% {background-color: #f0ff68;}
+}
+
+@keyframes goldGradient {
+    0%   {color: #FFE100;}
+    
+    25% {color: #CCAF44;}
+
+    50%  {color: #BDA100;}
+
+    75% {color: #ECD646;}
+  
+    100% {color: #FFE100;}
+}
+
+@keyframes shineHead {
+    0%   {color: #FFE100;}
+    
+    25% {color: #f7a5be;}
+
+    50%  {color: #fff1a3;}
+
+    75% {color: #f7a5be;}
+  
+    100% {color: #FFE100;}
+}
+
+@keyframes movingBar {
+    0%   {left:0px; top:0px;}
+    
+    25% {left:-15px; top: 10px;}
+
+    75%  {left:15px; top: 10px;}
+  
+    100% {left:0px; top:0px;}
+}
+
+@keyframes listingGlow {
+    0% {background-color: #8b8a15;}
+    50% {background-color: #271c6b;}
+    100% {background-color: #8b8a15;}
+}
+
+@keyframes selectGlow {
+    0% {background-color: #2d0033;}
+    50% {background-color: #970000;}
+    100% {background-color: #2d0033;}
+}
