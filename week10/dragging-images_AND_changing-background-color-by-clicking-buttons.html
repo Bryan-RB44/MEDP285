@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- This HTML assignment uses a modified version of the terrarium example to allow the user to make their own solar system! -->
+		<title>Assignment 10: Make Your Own Solar System!</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<!-- Connecting css file to html file -->
+		<link rel="stylesheet" href="styles.css" />
+		<!-- Connecting JavaScript file to html file -->
+		<script src="script.js" defer></script>
+	</head>
+
+	<body>
+		<div id="page">
+			<h1>Make Your Own Solar System!</h1>
+
+			<div class="containButton">
+				<div class="centerButton">
+					<!-- These buttons will expand the space given to place the planets in by changing the background color, and give the option to go back to the default space as well -->
+					<button type="button" onclick='document.body.style.backgroundColor = "#000000"'>Complete Universe Mode</button>
+					<button type="button" onclick='document.body.style.backgroundColor = "#230b42"'>Back to Small Universe Mode</button>
+				</div>
+			</div>
+
+			<!-- LEFT SIDE OF THE SCREEN -->
+			<div id="left-container" class="container">
+				
+				<!-- PLANETS -->
+				<div class="planet-holder">
+					<img class="planet" alt="planet" id="planet1" src="images/planet1.png" />
+				</div>
+				<div class="planet-holder">
+					<img class="planet" alt="planet" id="planet3" src="images/planet3.png" />
+				</div>
+				<div class="planet-holder">
+					<img class="planet" alt="planet" id="planet5" src="images/planet5.png" />
+				</div>
+				<div class="planet-holder">
+					<img class="planet" alt="planet" id="planet7" src="images/planet7.png" />
+				</div>
+				<div class="planet-holder">
+					<img class="planet" alt="planet" id="planet9" src="images/planet9.webp" />
+				</div>
+
+			</div>
+
+			<!-- RIGHT SIDE OF THE SCREEN -->
+			<div id="right-container" class="container">
+
+				<!-- PLANET TEST -->
+				<div class="planet-holder">
+					<img class="planet" alt="planet" id="planet2" src="images/planet2.webp" />
+				</div>
+				<div class="planet-holder">
+					<img class="planet" alt="planet" id="planet4" src="images/planet4.png" />
+				</div>
+				<div class="planet-holder">
+					<img class="planet" alt="planet" id="planet6" src="images/planet6.png" />
+				</div>
+				<div class="planet-holder">
+					<img class="planet" alt="planet" id="planet8" src="images/planet8.png" />
+				</div>
+				<div class="planet-holder">
+					<img class="sun" alt="planet" id="sun" src="images/planet10.png" />
+				</div>
+
+			</div>
+
+			<div id="terrarium">
+				<div class="universeBubble">
+			</div>
+
+		</div>
+	</body>
+</html>
+
