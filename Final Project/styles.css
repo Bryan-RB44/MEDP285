@@ -1,0 +1,268 @@
+/* START border-box fix */
+html {
+    box-sizing: border-box;
+    background-attachment: fixed;
+    background: linear-gradient(#ff3a3a, #002bb9);
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+/* END border-box fix */
+
+/* START font classes */
+/* Head Fonts Class */
+.headFont {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Reading Fonts Class */
+.textFont {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+/* END font classes */
+
+.container {
+    color: #FFF;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr)); /* Makes 12 columns that are each 1 part of available space.*/
+
+    width: 80%;
+    margin: 0 auto; /*top and bottom are 0, left and right are automatically evenly spaced from the sides. */
+}
+/* all of the children of container will have these traits. */
+/* basically each element inside the container. */
+.container > * {
+    padding: 20px;
+}
+
+/* START heading tags configs */
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+/* END heading tags configs */
+
+/* START header related tags */
+header {
+    background: #b91515;
+    color: #FFFF;
+    grid-column: 1 / 13; /* the header will be a column that goes from the start to the end of the grid horizontally (here it's the left to right of page). */
+    border-style: double;
+    border-width: 6px;
+    border-color: #d89393 #f85959;
+}
+header h1 {
+    letter-spacing: 8px;
+    font-weight: 900;
+    text-align: center;
+    background-color: #be4d4d00;
+    border-style: solid;
+    border-radius: 50px;
+    padding-top: 5px;
+}
+header h2 {
+    letter-spacing: 1px;
+    font-family: Georgia, Arial, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 50px;
+}
+header h3 {
+    letter-spacing: 1px;
+    font-family: Georgia, Arial, sans-serif;
+    padding-bottom: 0px;
+    text-align: center;
+}
+/* END header related tags */
+
+/* END main related configs */
+main {
+    background: #40790b;
+    grid-column: 1 / 10; /*Makes the main take up 6 out of 13 spaces and go right after the nav. */
+    border-style: double;
+    border-width: 6px;
+    border-color: #73af25 #73af25 #042904 #042904;
+}
+main button a {
+    text-decoration: none;
+    color: #000;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+main button a:hover {
+    background-color: #000;
+    color: #ffffff;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 10px;
+}
+/* END main related configs */
+
+/* START nav related configs */
+nav {
+    background: #908194;
+    grid-column: 1 / 4; /*Makes the nav take up 3 columns of space. */
+    border-style: double;
+    border-width: 6px;
+    border-color: #faf74f #faf74f #8d54f8 #8d54f8;
+    position: sticky;
+    top: 0;
+}
+nav li {
+    padding: 2px;
+}
+nav.topNavi {
+    grid-row: 2 / 3;
+    grid-column: 1 / 13;
+    text-align: center;
+    border-style: double;
+    border-width: 6px;
+    border-color: #ffffff #ffffff;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+/* END nav related configs */
+
+/* START list related configs */
+li a {
+    text-decoration: none;
+    color: #E1FFF7;
+}
+li a:hover {
+    background-color: #f0ff68;
+    color: #520852;
+}
+/* END list related configs */
+
+/* START link related configs */
+a.naviTOP {
+    text-decoration: none;
+    padding: 6px;
+    color: #cbc5ff;
+    background-color: #2f003d;
+    border-radius: 25px;
+}
+a.naviTOP:hover {
+    background-color: #f0ff68;
+    color: #520852;
+}
+/* END link related configs */
+
+/* START aside configs */
+aside {
+    background: #4671c0;
+    grid-column: 10 / 13; /*Makes the nav take up the last 3 spaces of the grid. */
+    border-style: double;
+    border-width: 6px;
+    border-color: #a2b3e0 #061350 #061350 #a2b3e0;
+}
+aside a {
+    text-decoration: none;
+    color: #010f1b;
+}
+aside a:hover {
+    background-color: #f0ff68;
+    color: #520852;
+}
+aside li {
+    padding: 2px;
+}
+/* END aside configs */
+
+main, nav, aside {
+    grid-row: 3 / 5; /* This makes the 3 elements all go into the 2nd row to be together. This makes them go underneath the header now.*/
+}
+
+/* START footer related configs */
+footer {
+    background: #2a273d;
+    grid-column: 1 / 13; /* the footer will be a column that goes from the start to the end of the grid horizontally (here it's the left to right of page). */
+    border-style: double;
+    border-width: 6px;
+    border-color: #9a93d8 #2f003d #2f003d #2f003d;
+}
+/* END footer related configs */
+
+/* START image related configs */
+img.logo {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.containLogo {
+    background-image: linear-gradient(to bottom right, #d83200, #269c49,#466dec);
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #1f1f1f;
+}
+img {
+    margin-left: 15% ;
+    margin-right: 10%;
+    width: 10%;
+    height: auto;
+}
+/* END image related configs */
+
+/* DROP DOWN MENU */
+.dropbtn {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    
+    text-decoration: none;
+    background-color: #1f1f1f;
+    color: #f0ff68;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 4px;
+    padding: 4px;
+    border-color: #4671c0 #4671c0 #c43126 #c43126;
+
+    /* ANIMATION */
+    animation-name: changingBG;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1f1f1f;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #ffffff41;
+    z-index: 3333;
+}
+.dropdown-content a {
+    color: #f0ff68;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: #82b5f0;
+    background-color: #0c002e;
+
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+/* DROP DOWN MENU END */

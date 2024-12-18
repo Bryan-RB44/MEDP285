@@ -1,0 +1,110 @@
+<!-- Create a sample page to serve as a template for future pages -->
+<!-- This will be the template for both pages related to companies AND consoles -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Xbox Consoles</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Stylesheets used -->
+        <link rel="stylesheet" href="stylesCompany.css">
+        <link rel="stylesheet" href="animations.css">
+
+        <!-- Fonts Go Here -->
+         <!-- Head Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Comfortaa:wght@300..700&family=DynaPuff:wght@400..700&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <!-- Reading Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <h1  class="headFont">The Old Save File</h1>
+                <h3  class="headFont">The Site for Game Preservation</h3>
+                <h2  class="headFont"><u>XBOX</u></h2>
+            </header>
+            
+            <nav class="topNavi">
+
+                <div class="dropdown">
+                    <button class="dropbtn">Nintendo</button> | 
+                    <div class="dropdown-content">
+                      <a href="ninten.html">Info Page</a>
+                      <a href="https://www.nintendo.com/us/" target="_blank">Official Website</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Sega</button> | 
+                    <div class="dropdown-content">
+                      <a href="sega.html">Info Page</a>
+                      <a href="https://www.sega.com/" target="_blank">Official Website</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Sony</button> | 
+                    <div class="dropdown-content">
+                      <a href="playstat.html">Info Page</a>
+                      <a href="https://www.playstation.com/en-us/" target="_blank">Official Website</a>
+                    </div>
+                </div>
+
+                <a class="textHome" href="index.html">Home</a> | 
+
+            </nav>
+
+            <main class="xbox">
+                <h1 class="headFont">About XBOX</h1>
+                <hr>
+                <p class="textFont">
+                    Xbox is a video gaming brand that consists of five home video game consoles, as well as applications (games), streaming service Xbox Cloud Gaming, and online services such as the Xbox network and Xbox Game Pass. The brand is produced by Microsoft Gaming, a division of Microsoft.
+                </p class="textFont">
+                <p class="textFont">
+                    The original device was the first video game console offered by an American company after the Atari Jaguar stopped sales in 1996. It reached over 24 million units sold by May 2006. Microsoft's second console, the Xbox 360, was released in 2005 and has sold 86 million units as of October 2021. The third console, the Xbox One, was released in November 2013 and has sold 58 million units. The fourth line of Xbox consoles, the Xbox Series X and Series S, were released in November 2020. The head of Xbox is Phil Spencer, who succeeded former head Marc Whitten in late March 2014.
+                </p>
+                <img class="logo" src="images/xbox-consoles.webp">
+            </main>
+
+            <aside>
+                <h2 class="headFont">Top Consoles</h2>
+                <hr>
+                <ul class="textFont">
+                    <li>Xbox 360</li>
+                    <li>Xbox One</li>
+                    <li>Xbox Series X/S</li>
+                </ul>
+                <p class="textFont">More Info: <a href="https://en.wikipedia.org/wiki/Xbox"> Here</a></p>
+                <button>Click for (Almost) Dark Mode</button>
+            </aside>
+            <section>
+                <iframe src="https://editor.p5js.org/BryanRB/full/2A9GwyhzY"></iframe>
+            </section>
+
+            <footer class="textFont">
+                &copy; 2024 Bryan Briones
+            </footer>
+        </div>
+        
+        <!-- jQuery script used -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("html").click(function(){
+                    $("html").css("background", "#000000"),
+                    $("nav").css("color", "#000000"), 
+                    $("header").css("color", "#000000"), 
+                    $("p").css("color", "#000000"), 
+                    $("aside").css("color", "#000000");
+                });
+            });
+        </script>
+    </body>
+</html>

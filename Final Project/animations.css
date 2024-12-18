@@ -1,0 +1,11 @@
+@keyframes changingBG {
+    0% {background-color: #1f1f1f;}
+
+    25% {background-color: #570000;}
+
+    50% {background-color: #04545e;}
+
+    75% {background-color: #1f045e;}
+    
+    100% {background-color: #002c04;}
+}

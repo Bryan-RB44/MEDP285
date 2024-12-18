@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>The Old Save File</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Stylesheets used -->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="animations.css">
+
+        <!-- Fonts Go Here -->
+        <!-- Head Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Comfortaa:wght@300..700&family=DynaPuff:wght@400..700&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <!-- Reading Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+            <h1  class="headFont">The Old Save File</h1>
+            <h3  class="headFont">The Site for Game Preservation</h2>
+            </header>
+            
+            <nav class="topNavi">
+
+                <div class="dropdown">
+                    <button class="dropbtn">Nintendo</button> | 
+                    <div class="dropdown-content">
+                      <a href="ninten.html">Info Page</a>
+                      <a href="https://www.nintendo.com/us/" target="_blank">Official Website</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Sega</button> | 
+                    <div class="dropdown-content">
+                      <a href="sega.html">Info Page</a>
+                      <a href="https://www.sega.com/" target="_blank">Official Website</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Sony</button> | 
+                    <div class="dropdown-content">
+                      <a href="playstat.html">Info Page</a>
+                      <a href="https://www.playstation.com/en-us/" target="_blank">Official Website</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Xbox</button>
+                    <div class="dropdown-content">
+                      <a href="xbox.html">Info Page</a>
+                      <a href="https://www.xbox.com/en-US" target="_blank">Official Website</a>
+                    </div>
+                </div>
+            </nav>
+
+            <main>
+                <h1 class="headFont">About us</h1>
+                <hr>
+                <p class="textFont">
+                    Our site <i>The Old Save File</i> is the place to be at for anything related to the history of major video game companies over the past decade. We have information on Nintendo, Sega, Playstation, and Microsoft alongside links to further information such as consoles and games via Wikipedia. This site intends to store information due to crackdowns on video game history via emulator and rom site take downs, so as a loophole we only provide information on these console makers and music samples from some of their games visualized via the p5.js library. Enjoy your stay and hope you learn something new about this small portion of video game history!
+                </p>
+                <div class="containLogo">
+                    <img class="logo" src="images/logos.jpg">
+                </div>
+            </main>
+
+            <aside>
+                <h2 class="headFont">Title of News Here</h2>
+                <hr>
+                <ul class="textFont">
+                    <li>Game Award Winners of 2024 Announced</li>
+                    <li>Video Game Rom Site Sued to Oblivion by Nintendo</li>
+                    <li>Funding Secured for Website Maintenence</li>
+                    <li>Pending Legal Case for Online Game Preservation</li>
+                    <li>SEGA's Page Becomes Most Visited on Website</li>
+                </ul>
+                <button>Click for (Almost) Dark Mode</button>
+            </aside>
+
+            <footer class="textFont">
+                &copy; 2024 Bryan Briones
+            </footer>
+        </div>
+        
+        <!-- jQuery script used -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("html").click(function(){
+                    $("html").css("background", "#000000"),
+                    $("nav").css("color", "#000000"), 
+                    $("header").css("color", "#000000"), 
+                    $("p").css("color", "#000000"), 
+                    $("aside").css("color", "#000000");
+                });
+            });
+        </script>
+    </body>
+</html>

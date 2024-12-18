@@ -1,0 +1,114 @@
+<!-- Create a sample page to serve as a template for future pages -->
+<!-- This will be the template for both pages related to companies AND consoles -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Nintendo Consoles</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Stylesheets used -->
+        <link rel="stylesheet" href="stylesCompany.css">
+        <link rel="stylesheet" href="animations.css">
+
+        <!-- JS script used -->
+        <script src="scripts.js" defer></script>
+
+        <!-- Fonts Go Here -->
+         <!-- Head Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Comfortaa:wght@300..700&family=DynaPuff:wght@400..700&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <!-- Reading Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="container">
+            <header>
+                <h1  class="headFont">The Old Save File</h1>
+                <h3  class="headFont">The Site for Game Preservation</h3>
+                <h2  class="headFont"><u>Nintendo</u></h2>
+            </header>
+            
+            <nav class="topNavi">
+                <a class="textHome" href="index.html">Home</a> | 
+
+                <div class="dropdown">
+                    <button class="dropbtn">Sega</button> | 
+                    <div class="dropdown-content">
+                      <a href="sega.html">Info Page</a>
+                      <a href="https://www.sega.com/" target="_blank">Official Website</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Sony</button> | 
+                    <div class="dropdown-content">
+                      <a href="playstat.html">Info Page</a>
+                      <a href="https://www.playstation.com/en-us/" target="_blank">Official Website</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Xbox</button>
+                    <div class="dropdown-content">
+                      <a href="xbox.html">Info Page</a>
+                      <a href="https://www.xbox.com/en-US" target="_blank">Official Website</a>
+                    </div>
+                </div>
+            </nav>
+
+            <main class="nintendo">
+                <h1 class="headFont">About Nintendo</h1>
+                <hr>
+                <p class="textFont">
+                    Nintendo was founded in 1889 as Nintendo Koppai by craftsman Fusajiro Yamauchi and originally produced handmade hanafuda playing cards. After venturing into various lines of business during the 1960s and acquiring legal status as a public company, Nintendo distributed its first console, the Color TV-Game, in 1977. It gained international recognition with the release of Donkey Kong in 1981 and the Nintendo Entertainment System and Super Mario Bros. in 1985.
+                </p class="textFont">
+                <p class="textFont">
+                    Since then, Nintendo has produced some of the most successful consoles in the video game industry, such as the Game Boy, the Super Nintendo Entertainment System, the Nintendo DS, the Wii, and the Nintendo Switch. It has created or published numerous major franchises, including Mario, Donkey Kong, The Legend of Zelda, Metroid, Kirby, Star Fox, Pokémon, Super Smash Bros., Animal Crossing, Fire Emblem, Pikmin, Xenoblade Chronicles, and Splatoon, and Nintendo's mascot, Mario, is internationally recognized, as well as other characters like Donkey Kong, Link, Kirby, and Pikachu. The company has sold more than 5.592 billion video games and over 836 million hardware units globally, as of March 2023.
+                </p>
+
+                <img class="logo" src="images/nintendo-consoles.avif">
+            </main>
+
+            <aside>
+                <h2 class="headFont">Top Consoles</h2>
+                <hr>
+                <ul class="textFont">
+                    <li>Nintendo DS</li>
+                    <li>Nintendo Switch</li>
+                    <li>Gameboy & Gameboy Color</li>
+                </ul>
+                <p class="textFont">More Info: <a href="https://en.wikipedia.org/wiki/Nintendo_video_game_consoles"> Here</a></p>
+                <button>Click for (Almost) Dark Mode</button>
+            </aside>
+            <section>
+                <iframe src="https://editor.p5js.org/BryanRB/full/pHEyX9Q_d"></iframe>
+            </section>
+
+            <footer class="textFont">
+                &copy; 2024 Bryan Briones
+            </footer>
+        </div>
+        <img class="egg" src="images/Block_Super_Mario_World.png"  id="questionBlock" onclick="sfxAudio()">
+
+        <!-- jQuery script used -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("html").click(function(){
+                    $("html").css("background", "#000000"),
+                    $("nav").css("color", "#000000"), 
+                    $("header").css("color", "#000000"), 
+                    $("p").css("color", "#000000"), 
+                    $("aside").css("color", "#000000");
+                });
+            });
+        </script>
+    </body>
+</html>

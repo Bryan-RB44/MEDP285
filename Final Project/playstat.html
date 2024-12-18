@@ -1,0 +1,110 @@
+<!-- Create a sample page to serve as a template for future pages -->
+<!-- This will be the template for both pages related to companies AND consoles -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>SONY Consoles</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Stylesheets used -->
+        <link rel="stylesheet" href="stylesCompany.css">
+        <link rel="stylesheet" href="animations.css">
+
+        <!-- Fonts Go Here -->
+         <!-- Head Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Comfortaa:wght@300..700&family=DynaPuff:wght@400..700&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <!-- Reading Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <h1  class="headFont">The Old Save File</h1>
+                <h3  class="headFont">The Site for Game Preservation</h3>
+                <h2  class="headFont"><u>SONY</u></h2>
+            </header>
+            
+            <nav class="topNavi">
+
+                <div class="dropdown">
+                    <button class="dropbtn">Nintendo</button> | 
+                    <div class="dropdown-content">
+                      <a href="ninten.html">Info Page</a>
+                      <a href="https://www.nintendo.com/us/" target="_blank">Official Website</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Sega</button> | 
+                    <div class="dropdown-content">
+                      <a href="sega.html">Info Page</a>
+                      <a href="https://www.sega.com/" target="_blank">Official Website</a>
+                    </div>
+                </div>
+
+                <a class="textHome" href="index.html">Home</a> | 
+
+                <div class="dropdown">
+                    <button class="dropbtn">Xbox</button>
+                    <div class="dropdown-content">
+                      <a href="xbox.html">Info Page</a>
+                      <a href="https://www.xbox.com/en-US" target="_blank">Official Website</a>
+                    </div>
+                </div>
+            </nav>
+
+            <main class="sony">
+                <h1 class="headFont">About SONY</h1>
+                <hr>
+                <p class="textFont">
+                    PlayStation is a video gaming brand that consists of five home video game consoles, two handhelds, a media center, and a smartphone, as well as an online service and multiple magazines. The brand is produced by Sony Interactive Entertainment, a division of Sony.
+                </p class="textFont">
+                <p class="textFont">
+                    The first PlayStation console was released in Japan in December 1994, and worldwide the following year. The original console in the series was the first console of any type to ship over 100 million units, doing so in under a decade. Its successor, the PlayStation 2, was released in 2000; it is the best-selling home console to date, having reached over 155 million units sold by the end of 2012. Sony's next console, the PlayStation 3, was released in 2006, selling over 87.4 million units by March 2017. Sony's next console, the PlayStation 4, was released in 2013, selling a million units within a day, becoming the fastest selling console in history. The latest console in the series, the PlayStation 5, was released in 2020 and sold 10 million units in its first 249 days, unseating its predecessor as the fastest-selling PlayStation console to-date. The main series of controllers utilized by the PlayStation series is the DualShock, a line of vibration-feedback gamepads that sold 28 million units by June 2008.
+                </p>
+
+                <img class="logo" src="images/playstation-consoles.png">
+            </main>
+
+            <aside>
+                <h2 class="headFont">Top Consoles</h2>
+                <hr>
+                <ul class="textFont">
+                    <li>Playstation 2</li>
+                    <li>Playstation 4</li>
+                    <li>Playstation</li>
+                </ul>
+                <p class="textFont">More Info: <a href="https://en.wikipedia.org/wiki/PlayStation"> Here</a></p>
+                <button>Click for (Almost) Dark Mode</button>
+            </aside>
+            <section>
+                <iframe src="https://editor.p5js.org/BryanRB/full/qOOjyjuTz"></iframe>
+            </section>
+
+            <footer class="textFont">
+                &copy; 2024 Bryan Briones
+            </footer>
+        </div>
+        
+        <!-- jQuery script used -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("html").click(function(){
+                    $("html").css("background", "#000000"),
+                    $("nav").css("color", "#000000"), 
+                    $("header").css("color", "#000000"), 
+                    $("p").css("color", "#000000"), 
+                    $("aside").css("color", "#000000");
+                });
+            });
+        </script>
+    </body>
+</html>

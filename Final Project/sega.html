@@ -1,0 +1,110 @@
+<!-- Create a sample page to serve as a template for future pages -->
+<!-- This will be the template for both pages related to companies AND consoles -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>SEGA Consoles</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Stylesheets used -->
+        <link rel="stylesheet" href="stylesCompany.css">
+        <link rel="stylesheet" href="animations.css">
+
+        <!-- Fonts Go Here -->
+         <!-- Head Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Comfortaa:wght@300..700&family=DynaPuff:wght@400..700&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <!-- Reading Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <h1  class="headFont">The Old Save File</h1>
+                <h3  class="headFont">The Site for Game Preservation</h3>
+                <h2  class="headFont"><u>SEGA</u></h2>
+            </header>
+            
+            <nav class="topNavi">
+
+                <div class="dropdown">
+                    <button class="dropbtn">Nintendo</button> | 
+                    <div class="dropdown-content">
+                      <a href="ninten.html">Info Page</a>
+                      <a href="https://www.nintendo.com/us/" target="_blank">Official Website</a>
+                    </div>
+                </div>
+
+                <a class="textHome" href="index.html">Home</a> | 
+
+                <div class="dropdown">
+                    <button class="dropbtn">Sony</button> | 
+                    <div class="dropdown-content">
+                      <a href="playstat.html">Info Page</a>
+                      <a href="https://www.playstation.com/en-us/" target="_blank">Official Website</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Xbox</button>
+                    <div class="dropdown-content">
+                      <a href="xbox.html">Info Page</a>
+                      <a href="https://www.xbox.com/en-US" target="_blank">Official Website</a>
+                    </div>
+                </div>
+            </nav>
+
+            <main class="sega">
+                <h1 class="headFont">About SEGA</h1>
+                <hr>
+                <p class="textFont">
+                    Sega Corporation is a Japanese multinational video game company and subsidiary of Sega Sammy Holdings headquartered in Shinagawa, Tokyo. It produces several multi-million-selling game franchises for arcades and consoles, including Sonic the Hedgehog, Angry Birds, Phantasy Star, Puyo Puyo, Super Monkey Ball, Total War, Virtua Fighter, Megami Tensei, Sakura Wars, Persona, and Yakuza. From 1983 until 2001, Sega also developed its own consoles.
+                </p class="textFont">
+                <p class="textFont">
+                    In 1988, Sega released the Mega Drive, or the Genesis in North America. The Mega Drive struggled against competition in Japan, but the Genesis found success overseas after the release of Sonic the Hedgehog in 1991 and briefly outsold its main competitor, the Super Nintendo Entertainment System, in the US. In 2001, after several commercial failures such as the 32X, Saturn, and Dreamcast, Sega stopped manufacturing consoles to become a third-party developer and publisher, and was acquired by Sammy Corporation in 2004. Sega Holdings Co. Ltd. was established in 2015; Sega Corporation was renamed to Sega Games Co., Ltd., and its arcade, entertainment, and toy divisions separated into other companies. In 2020, Sega Games and Sega Interactive merged to become Sega Corporation.
+                </p>
+
+                <img class="logo" src="images/sega-consoles.webp">
+            </main>
+
+            <aside>
+                <h2 class="headFont">Top Consoles</h2>
+                <hr>
+                <ul class="textFont">
+                    <li>Sega Genesis</li>
+                    <li>Master System</li>
+                    <li>Gamegear</li>
+                </ul>
+                <p class="textFont">More Info: <a href="https://en.wikipedia.org/wiki/List_of_Sega_video_game_consoles"> Here</a></p>
+                <button>Click for (Almost) Dark Mode</button>
+            </aside>
+            <section>
+                <iframe src="https://editor.p5js.org/BryanRB/full/u0uhpdaIY"></iframe>
+            </section>
+
+            <footer class="textFont">
+                &copy; 2024 Bryan Briones
+            </footer>
+        </div>
+        
+        <!-- jQuery script used -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("html").click(function(){
+                    $("html").css("background", "#000000"),
+                    $("nav").css("color", "#000000"), 
+                    $("header").css("color", "#000000"), 
+                    $("p").css("color", "#000000"), 
+                    $("aside").css("color", "#000000");
+                });
+            });
+        </script>
+    </body>
+</html>
